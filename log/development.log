@@ -14608,3 +14608,96 @@ Processing by PinsController#save_pin as HTML
   Parameters: {"imageUpload"=>"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", "title"=>"bzbsb", "description"=>"Jsjd", "pin"=>{"title"=>"bzbsb", "description"=>"Jsjd"}}
 Can't verify CSRF token authenticity
 Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (13.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddDropboxSessionToUser (20150611031914)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (69.2ms)[0m  [1mALTER TABLE "users" ADD "dropbox_session" character varying[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150611031914"]]
+  [1m[36m (17.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (2.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (5.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'pins'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (4.9ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (4.9ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'votes'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to RemoveFieldNameFromUsers (20150611050819)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (38.6ms)[0m  [1mALTER TABLE "users" DROP "field_name"[0m
+PG::UndefinedColumn: ERROR:  column "field_name" of relation "users" does not exist
+: ALTER TABLE "users" DROP "field_name"
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to RemoveFieldNameFromUsers (20150611050819)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (41.7ms)[0m  [1mALTER TABLE "users" DROP "dropbox_session"[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150611050819"]]
+  [1m[36m (20.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (4.8ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'pins'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (11.1ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (5.2ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'votes'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m

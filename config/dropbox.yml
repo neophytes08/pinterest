@@ -1,0 +1,6 @@
+app_key: "nyzzerwg7esgf1r"
+app_secret: "rxa4pizl2lcl5at"
+access_token: "muI50L2BIlAAAAAAAAAACOtsYKVpIJ3VoFAJkBGqBTpA34RcVao5FweElG9F3miL"
+access_token_secret: <%= ENV["ACCESS_TOKEN_SECRET"] %>
+user_id: ""
+access_type: "dropbox"

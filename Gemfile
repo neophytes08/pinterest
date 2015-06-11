@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+ruby "2.2.1"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
 # Use sqlite3 as the database for Active Record
@@ -29,6 +29,8 @@ gem 'devise', '~> 3.5.1'
 gem 'paperclip', '~> 4.2.1'
 gem 'masonry-rails', '~> 0.2.4'
 gem 'acts_as_votable', '~> 0.10.0'
+gem "paperclip-dropbox", ">= 1.1.7"
+gem 'dropbox-sdk', '~> 1.6.4'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'

@@ -12,5 +12,6 @@ Rails.application.routes.draw do
   get '/getpin/pin/:id' => 'pins#getPin'
   get '/deletepin/pin/:id' => 'pins#destroy'
   post '/savepin/pin' => 'pins#save_pin'
+
   root 'pins#index'
 end
