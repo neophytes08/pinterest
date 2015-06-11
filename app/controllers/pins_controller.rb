@@ -1,6 +1,6 @@
 class PinsController < ApplicationController
   before_action :find_pin, only:[:show, :edit, :update, :destroy, :upvote, :getPin]
-  before_action :authenticate_user!, except: [:index, :show , :fetch, :getPin]
+  before_action :authenticate_user!, except: [:index, :show , :fetch, :getPin , :save_pin]
 
   def index
     @pins = Pin.all.order("created_at DESC")
@@ -57,6 +57,11 @@ class PinsController < ApplicationController
     render json: { pins: @allPins.to_json( :methods => [:avatar_url] ) , users: @allUsers } , status: :ok
   end
   
+  def save_pin
+    puts params[:title]
+    render json: { status: "ok" } , status: :ok
+  end
+
   def getPin
      response = { pin: @pin,
                   avatar: @pin.avatar_url }
