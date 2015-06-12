@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150611050819) do
+ActiveRecord::Schema.define(version: 20150612140401) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -29,6 +29,22 @@ ActiveRecord::Schema.define(version: 20150611050819) do
   end
 
   add_index "pins", ["user_id"], name: "index_pins_on_user_id", using: :btree
+
+  create_table "user_infos", force: :cascade do |t|
+    t.string   "fname"
+    t.string   "lname"
+    t.date     "bday"
+    t.string   "address"
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
+    t.integer  "user_id"
+    t.string   "picture_file_name"
+    t.string   "picture_content_type"
+    t.integer  "picture_file_size"
+    t.datetime "picture_updated_at"
+  end
+
+  add_index "user_infos", ["user_id"], name: "index_user_infos_on_user_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false

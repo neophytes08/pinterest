@@ -6,6 +6,6 @@ class Pin < ActiveRecord::Base
   validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/
 
   def avatar_url
-    image.url
+    image.url(:medium)
   end
 end

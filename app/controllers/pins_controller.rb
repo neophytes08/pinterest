@@ -45,11 +45,6 @@ class PinsController < ApplicationController
     redirect_to root_path
   end
 
-
-  def profile
-
-  end
-
   #API
   def fetch 
     @allPins = Pin.all.order("created_at DESC")
