@@ -32,6 +32,10 @@ gem 'masonry-rails', '~> 0.2.4'
 gem 'acts_as_votable', '~> 0.10.0'
 gem "paperclip-dropbox", ">= 1.1.7"
 gem 'dropbox-sdk', '~> 1.6.4'
+gem 'sinatra-websocketio', '~> 0.4.1'
+gem 'thin', '~> 1.6.3'
+gem 'em-websocket', '~> 0.5.1'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'

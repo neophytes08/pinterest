@@ -1,7 +1,7 @@
 <div class="panel panel-default">
     <div class="panel panel-body">
       <div class="row text-center">
-          <img src="<%= @user.user_info.picture.url%>" class="img-circle" alt="Cinque Terre" width="300" height="300">
+          <a href="<%= @user.user_info.picture.url %>"><img src="<%= @user.user_info.picture.url %>" class="img-circle hoverable-img" alt="Cinque Terre" width="300" height="300"></a>
 
           <h3><%= @user.user_info.fname.titleize %> <%= @user.user_info.lname.titleize %></h3>
           <% if @user.pins.count == 0 %>

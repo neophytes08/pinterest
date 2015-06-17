@@ -114,3 +114,14 @@ nav {
 textarea {
   min-height: 250px;
 }
+
+.hoverable-img:hover
+{
+  box-shadow: 0px 0px 2px black;
+  transition: box-shadow 2s;
+}
+
+.color-gray
+{
+  color: #3b5998;
+}

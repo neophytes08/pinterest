@@ -7,7 +7,7 @@ class PinsController < ApplicationController
   end
 
   def show
-
+    @comment = Comment.new
   end
   def new
   	@pin = current_user.pins.build
@@ -66,6 +66,10 @@ class PinsController < ApplicationController
   private
   def pin_params
   	params.require(:pin).permit(:title, :description, :image)
+  end
+
+  def comment_params
+    params.require(:comment).permit(:comment_text, :pin_id)
   end
 
   def find_pin
