@@ -9,7 +9,7 @@
           </div>
 
           <div class="panel-body">
-              <%= simple_form_for(@profile, html: { multipart: true }) do |f| %>
+              <%= simple_form_for @profile, html: { multipart: true } do |f| %>
                 <% if @profile.errors.any? %>
                   <h2><%= pluralize(@rofile.errors.count, "error") %> Prevented this User from saving </h2>
                   <ul>

@@ -1,0 +1,31 @@
+<div class="panel-body">
+  <%= simple_form_for @user_info, html: { multipart: true } do |f| %>
+    <% if @user_info.errors.any? %>
+      <h2><%= pluralize(@user_info.errors.count, "error") %> Prevented this User from saving </h2>
+      <ul>
+        <% @user_info.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    <% end %>
+
+    <div class="form-group">
+      <%= f.input :picture, input_html: { class: "form-control"} %>
+    </div>
+     <div class="form-group">
+      <%= f.input :fname, input_html: { class: "form-control"} %>
+    </div>
+     <div class="form-group">
+      <%= f.input :lname, input_html: { class: "form-control"} %>
+    </div>
+     <div class="form-group">
+      <%= f.input :address, input_html: { class: "form-control"} %>
+    </div>
+     <div class="form-group">
+      <%= f.date_field :bday, input_html: { class: "form-control"} %>
+    </div>
+     <div class="form-group">
+      <button class="btn btn-primary pull-right" type="submit">Save</button>
+    </div>
+  <% end %>
+</div>

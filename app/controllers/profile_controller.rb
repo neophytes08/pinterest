@@ -1,32 +1,31 @@
 class ProfileController < ApplicationController
-  before_action :check_user_profile, only: :profile
+  before_action :check_user_profile, only: :index
 
-  def profile
-    @user = User.find(current_user)
+  def index
+    @user_infos = User.find(current_user)
   end
 
   def new
-   
+    @user_infos = UserInfo.new
   end
 
   def create
-    @profile = current_user.profile.build
 
-    if @profile.save
-      redirect_to profile
-    else
-      render 'new'
-    end
+    puts @user_infos
+    redirect_to @user_infos
+    # @profile = current_user.user_info.build
+
+    # if @profile.save
+    #   redirect_to profile
+    # else
+    #   render 'new'
+    # end
   end
 
   private
   def profile_params
-    params.require(:profile).permit(:fname, :lname, :bday, :address, :picture)
+    params.require(:user_infos).permit(:fname, :lname, :bday, :address, :picture)
   end
-
-  #def find_pin
-    #@pin = Pin.find(current_user)
-  #end 
 
   private
 
@@ -34,8 +33,7 @@ class ProfileController < ApplicationController
     user = User.find(current_user.id)
 
     if !user.user_info
-      @profile = UserInfo.new
-      render :new
+      render 'new'
     end
 
   end
