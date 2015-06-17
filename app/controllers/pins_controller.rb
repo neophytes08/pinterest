@@ -68,10 +68,6 @@ class PinsController < ApplicationController
   	params.require(:pin).permit(:title, :description, :image)
   end
 
-  def comment_params
-    params.require(:comment).permit(:comment_text, :pin_id)
-  end
-
   def find_pin
     @pin = Pin.find(params[:id])
   end  

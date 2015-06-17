@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'comments/index'
+
   devise_for :users
   resources :comments
   resources :user_infos do
